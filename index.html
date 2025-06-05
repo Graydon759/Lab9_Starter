@@ -102,7 +102,6 @@
         }
       }
       try{
-        console.log(firstNum, secondNum, operator);
         if(secondNum == '0' && operator === '/'){
           throw new divideByZeroError('Tried to divide by Zero');
         }
@@ -121,7 +120,8 @@
     });
 
     let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
-
+    </script>
+    <script>
     // Start your code here
     // You may move this JS to another file if you wish
     window.addEventListener('error', ()=>{
